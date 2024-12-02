@@ -75,7 +75,7 @@ fn classify_with_problem_dampener(data: &Vec<Vec<i32>>) -> i32 {
     for record in data {
         if check_record(&record) {
              count += 1;
-         }
+        }
         else {
             for i in 0..record.len() {
                 let mut new_record = record.clone();
