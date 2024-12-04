@@ -42,9 +42,7 @@ fn parse_mult_with_conditions(data: &str) -> i32 {
             _ => {
                 if cap.get(1).is_some() && cap.get(2).is_some() {
                     let (a, b): (i32, i32) = (cap[1].parse().unwrap(), cap[2].parse().unwrap());
-                    if enable {
-                        total += a * b;
-                    }
+                    total += if enable { a * b } else { 0 };
                 }
             }
         }
