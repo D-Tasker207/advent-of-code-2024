@@ -116,6 +116,7 @@ fn search_from_center(data: &Vec<Vec<char>>, word: &str, c_pos: (usize, usize)) 
     }
     return count;
 }
+
 fn search_direction(
     data: &Vec<Vec<char>>,
     word_chars: Vec<char>,
